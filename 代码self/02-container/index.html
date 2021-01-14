@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .container {
+            height: 40px;
+            margin: 0 auto;
+            background-color: rebeccapurple;
+        }
+        /* 2.css实现响应式 */
+        @media screen and (max-width:768px){
+            .container{
+                width: 100%;
+            }
+        }
+        @media screen and (min-width:768px) and (max-width: 992px){
+            .container{
+                width: 750px;
+            }
+        }
+        @media screen and (min-width:768px) and (max-width: 992px){
+            .container{
+                width: 750px;
+            }
+        }
+        @media screen and (min-width:992px) and (max-width:1200px){
+            .container{
+                width: 970px;
+            }
+        }
+        @media screen and (min-width:1200px){
+            .container{
+                width: 1170px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+    <script>
+        // window.addEventListener('load', function () {//1.js实现响应式
+        //     // 1.获取常量
+        //     var container = document.querySelector(".container")
+        //     var clientW = 0
+        //     resize()
+        //     // 2.监听窗口的大小变化
+        //     window.addEventListener('resize', resize)
+        //     function resize() {
+        //         // 2.1获取改变后的宽高
+        //         clientW = window.innerWidth
+        //         if (clientW >= 1200) {//大屏幕
+        //             container.style.width = '1170px'
+        //         } else if (clientW > 992) {//中等屏幕
+        //             container.style.width = '970px'
+        //         } else if (clientW > 768) {//小屏幕
+        //             container.style.width = '750px'
+        //         } else {
+        //             container.style.width = '100%'
+        //         }
+        //     }
+        // })
+
+    </script>
+</body>
+
+</html>
